@@ -73,18 +73,17 @@ function getSelected() {
 }
 
 submitBtn.addEventListener("click", () => {
-	console.log(currentQuiz);
 	let userAnswer = getSelected();
-	console.log(userAnswer);
-	if (currentQuiz < quizData.length) {
-		if (userAnswer == quizData[currentQuiz].correct) {
-			score++;
-		}
+	if (
+		currentQuiz < quizData.length &&
+		userAnswer == quizData[currentQuiz].correct
+	) {
+		score++;
+	}
+	if (currentQuiz < quizData.length - 1) {
 		currentQuiz++;
-		if (currentQuiz < quizData.length) {
-			loadQuiz();
-			deselectAnswers();
-		}
+		loadQuiz();
+		deselectAnswers();
 	} else {
 		currentQuiz = 0;
 		quiz.innerHTML = `<h2>Your Score is ${score}! 🎉<h2>`;
