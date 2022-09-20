@@ -1,10 +1,9 @@
 let convertButton = document.getElementById("convert-btn");
 let destinationP = document.querySelectorAll(".case_div p");
 
-console.log(destinationP);
-
 convertButton.addEventListener("click", () => {
 	let userText = document.getElementById("text").value.trim();
+	if (userText.trim().length === 0) return;
 	destinationP.forEach((item) => {
 		if (item.id == "camel-case") {
 			let textArray = userText.split(" ");
