@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #937DC2;
+  color: #fff;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h2 {
+  font-family: 'Bungee Spice', cursive;
+  font-size: 3rem;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #FFE6F7;
+  border: 0;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FFABE1;
+}
