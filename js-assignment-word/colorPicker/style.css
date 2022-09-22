@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.mainArea {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.colorBar {
+  height: 80px;
+  margin-top: 1px;
+}
