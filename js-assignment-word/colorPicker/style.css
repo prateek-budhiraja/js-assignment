@@ -2,12 +2,19 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  background-color: #495C83;
+  color: #fff;
 }
 
 .mainArea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px 5px;
+}
+
+.colorPallet {
+  width: 60%;
+  margin: 0 auto;
 }
 
 h1 {
