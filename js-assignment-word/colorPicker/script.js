@@ -3,7 +3,7 @@ let colorH1 = document.getElementsByTagName("h1")[0];
 
 colorBar.forEach((element) => {
 	let copyConfirm = document.createElement("h2");
-	copyConfirm.innerText = "Hex Code Copied to ClipBord 🎉";
+	copyConfirm.innerText = "Hex Code Copied to Clipboard 🎉";
 	copyConfirm.classList.add("clipbordConfirm");
 
 	element.style.backgroundColor = "#" + element.id;
