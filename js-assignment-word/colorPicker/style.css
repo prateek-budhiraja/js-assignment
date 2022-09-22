@@ -4,6 +4,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #495C83;
   color: #fff;
+  transition: 0.5s all ease-in-out;
 }
 
 .mainArea {
@@ -22,7 +23,28 @@ h1 {
   margin-bottom: 50px;
 }
 
+h2 {
+  transition: 0.5s all ease-in-out;
+  text-align: center;
+}
+
 .colorBar {
   height: 80px;
   cursor: pointer;
+}
+
+@keyframes append-animate {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.clipbordConfirm {
+  animation: append-animate .3s linear;
 }
