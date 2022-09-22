@@ -7,14 +7,15 @@ body {
 .mainArea {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px 5px;
+  gap: 40px 5px;
 }
 
 h1 {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .colorBar {
   height: 80px;
-  margin-top: 1px;
+  cursor: pointer;
 }
