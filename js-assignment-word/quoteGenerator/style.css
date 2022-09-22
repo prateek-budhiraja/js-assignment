@@ -13,6 +13,7 @@ body {
   flex-direction: column;
   padding: 0 25%;
   font-family: 'Inter', sans-serif;
+  background-color: #C6EBC5;
 }
 
 h2 {
