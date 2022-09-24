@@ -6,15 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Typing Calculator</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-  <textarea cols="90" rows="20"></textarea>
-
-
-
+  <div class="container">
+    <h3>Words: <span id="wordTyped">0</span> | Characters: <span id="charTyped">0</span> | Time: <span
+        id="time">00:00</span></h3>
+    <textarea cols="90" rows="20"></textarea>
+    <br />
+    <button id="staStoBtn">Start</button>
+  </div>
   <script src="./script.js"></script>
+
 </body>
 
 </html>
