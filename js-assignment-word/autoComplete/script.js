@@ -112,6 +112,7 @@ input.addEventListener("input", () => {
 	);
 	potentialLanguageTyped.forEach((language) => {
 		let queryDisplay = document.createElement("h3");
+		queryDisplay.classList.add("new-box");
 		queryDisplay.innerText = language;
 		queryContainer.append(queryDisplay);
 	});
