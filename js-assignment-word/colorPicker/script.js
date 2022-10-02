@@ -15,7 +15,9 @@ colorBar.forEach((element) => {
 				console.log("Copying to clipboard was successful!");
 				document.body.prepend(copyConfirm);
 				setTimeout(() => {
-					copyConfirm.remove();
+					copyConfirm.classList.remove("clipbordConfirm");
+					copyConfirm.classList.add("clipbordConfirmRemove");
+					setTimeout(() => copyConfirm.remove(), 300);
 				}, 2000);
 			},
 			function (err) {
