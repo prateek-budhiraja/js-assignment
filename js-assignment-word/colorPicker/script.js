@@ -17,7 +17,10 @@ colorBar.forEach((element) => {
 				setTimeout(() => {
 					copyConfirm.classList.remove("clipbordConfirm");
 					copyConfirm.classList.add("clipbordConfirmRemove");
-					setTimeout(() => copyConfirm.remove(), 300);
+					setTimeout(() => {
+						copyConfirm.classList.remove("clipbordConfirmRemove");
+						copyConfirm.remove();
+					}, 300);
 				}, 2000);
 			},
 			function (err) {
